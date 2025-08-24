@@ -15,6 +15,7 @@ export default function Home() {
       <ContentSection />
       {/* <CommunitySection /> */}
       <CallToAction />
+
       <FooterSection />
     </main>
   );
