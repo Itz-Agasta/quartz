@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
 import '../index.css';
-import Providers from '@/components/providers';
+import { ThemeProvider } from '@/components/theme-provider';
 import { HeroHeader } from '../components/header';
 
 const geistSans = Geist({
@@ -29,12 +29,17 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Providers>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          disableTransitionOnChange
+          enableSystem
+        >
           <div className="grid h-svh grid-rows-[auto_1fr]">
             <HeroHeader />
             {children}
           </div>
-        </Providers>
+        </ThemeProvider>
       </body>
     </html>
   );
