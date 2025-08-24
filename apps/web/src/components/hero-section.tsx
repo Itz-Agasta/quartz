@@ -51,7 +51,7 @@ export default function HeroSection() {
                   preset="fade-in-blur"
                   speedSegment={0.3}
                 >
-                  Build and Ship 10x faster with NS
+                  Organize your ideas with crystal clarity
                 </TextEffect>
                 <TextEffect
                   as="p"
@@ -61,9 +61,9 @@ export default function HeroSection() {
                   preset="fade-in-blur"
                   speedSegment={0.3}
                 >
-                  Tailwindcss highly customizable components for building modern
-                  websites and applications that look and feel the way you mean
-                  it.
+                  A powerful note-taking system designed for thinkers and
+                  creators. Capture thoughts effortlessly, connect them into
+                  knowledge, and keep everything under your control.
                 </TextEffect>
 
                 <AnimatedGroup
@@ -90,7 +90,7 @@ export default function HeroSection() {
                       size="lg"
                     >
                       <Link href="#link">
-                        <span className="text-nowrap">Start Building</span>
+                        <span className="text-nowrap">Start Writing</span>
                       </Link>
                     </Button>
                   </div>
@@ -102,7 +102,7 @@ export default function HeroSection() {
                     variant="ghost"
                   >
                     <Link href="#link">
-                      <span className="text-nowrap">Request a demo</span>
+                      <span className="text-nowrap">See Quartz in action</span>
                     </Link>
                   </Button>
                 </AnimatedGroup>

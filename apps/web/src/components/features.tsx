@@ -1,11 +1,11 @@
 import {
-  Building2,
-  Lightbulb,
+  FileText,
+  GitBranch,
+  Globe,
+  HardDrive,
   type LucideIcon,
-  ScreenShare,
-  Trophy,
-  User,
-  User2,
+  Search,
+  Settings,
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
@@ -21,26 +21,26 @@ type FeatureItem = {
 // Create feature data arrays for left and right columns
 const leftFeatures: FeatureItem[] = [
   {
-    icon: Building2,
-    title: 'Taught by Professionals',
+    icon: HardDrive,
+    title: 'Local First',
     description:
-      'Learn directly from top engineers and founders with real-world experience.',
+      'Your notes are stored safely on your device, giving you full ownership and privacy.',
     position: 'left',
     cornerStyle: 'sm:translate-x-4 sm:rounded-br-[2px]',
   },
   {
-    icon: User2,
-    title: 'Coding Hostels',
+    icon: GitBranch,
+    title: 'Knowledge Graph',
     description:
-      'Join virtual hostels to study, collaborate, and vibe with fellow learners.',
+      'Visualize how your ideas connect with a powerful graph view of linked notes.',
     position: 'left',
     cornerStyle: 'sm:-translate-x-4 sm:rounded-br-[2px]',
   },
   {
-    icon: Trophy,
-    title: 'Bounties',
+    icon: Search,
+    title: 'Powerful Search',
     description:
-      'Win rewards for solving challenges, contributing to projects, and helping peers.',
+      'Find anything instantly — from quick notes to deep connections across your vault.',
     position: 'left',
     cornerStyle: 'sm:translate-x-4 sm:rounded-tr-[2px]',
   },
@@ -48,26 +48,26 @@ const leftFeatures: FeatureItem[] = [
 
 const rightFeatures: FeatureItem[] = [
   {
-    icon: ScreenShare,
-    title: 'Revision Classes',
+    icon: FileText,
+    title: 'Markdown at Core',
     description:
-      'Stay sharp with weekly revision sessions and topic refreshers.',
+      'Write with plain Markdown, ensuring your notes stay future-proof and portable.',
     position: 'right',
     cornerStyle: 'sm:-translate-x-4 sm:rounded-bl-[2px]',
   },
   {
-    icon: User,
-    title: 'Peer Code Reviews',
+    icon: Globe,
+    title: 'Cross-Platform',
     description:
-      'Improve faster with feedback from mentors and batchmates on your actual code.',
+      'Seamlessly access your notes across desktop and mobile without compromise.',
     position: 'right',
     cornerStyle: 'sm:translate-x-4 sm:rounded-bl-[2px]',
   },
   {
-    icon: Lightbulb,
-    title: 'Leet Lab',
+    icon: Settings,
+    title: 'Plugins & Customization',
     description:
-      'Ace coding interviews with daily DSA problems, contests, and tracking.',
+      'Extend functionality with themes, plugins, and workflows that adapt to you.',
     position: 'right',
     cornerStyle: 'sm:-translate-x-4 sm:rounded-tl-[2px]',
   },
@@ -123,11 +123,11 @@ export default function Feature3() {
               <span className="absolute inset-0 bg-[radial-gradient(30%_40%_at_50%_100%,hsl(var(--primary)/0.25)_0%,transparent_100%)]" />
             </div>
             <h2 className="mb-2 text-center text-2xl text-foreground sm:mb-2.5 md:text-[2rem]">
-              Key Benefits of Cohorts
+              Why Choose Quartz
             </h2>
             <p className="mx-auto max-w-[18rem] text-pretty text-center text-muted-foreground">
-              Cohorts are best way to learn because you finish the course in a
-              timely manner
+              A modern note-taking system designed to help you capture,
+              organize, and grow your ideas with clarity.
             </p>
           </div>
 
@@ -142,4 +142,3 @@ export default function Feature3() {
     </section>
   );
 }
-
